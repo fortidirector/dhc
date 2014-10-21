@@ -20,7 +20,7 @@ SPIKE is a N work nodes that are hosting workers. Each work node discovers its l
 The discovery provides location of work queuee to use. TTL for discovery data is N minutes or failure.
 
 Hub
----
+===
 Hub is highly available cloud ready REST interface, built on a top of mongodb (or readis TBD) cluster.
 
 The key features to a hub are
@@ -35,5 +35,14 @@ The key features to a hub are
 
 there could be several geo aware hubs.
 
+SPIKE
+===
 
-job list and data IO facilities
+Spike is a remote data center location, i.e. LONDON. Spike may host N work nodes. 
+
+  Worknode
+  ---
+  
+  each worknode is autonomous hot standby master. 
+
+
