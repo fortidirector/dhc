@@ -10,9 +10,14 @@ At the current release point DHC probes are limited to ....
 
 
 Architecture
----
+==
 
-DHC architecture is a spike-hub , 
+DHC architecture is a spike-hub 
+
+HUB is centrally located or geo distributed (later)
+
+SPIKE is a N work nodes that are hosting workers. Each work node discovers its location members via HUBs service discovery API.
+The discovery provides location of work queuee to use. TTL for discovery data is N minutes or failure.
 
 Hub
 ---
