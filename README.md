@@ -38,11 +38,19 @@ there could be several geo aware hubs.
 SPIKE
 ===
 
-Spike is a remote data center location, i.e. LONDON. Spike may host N work nodes. 
+Spike is a remote data center location, i.e. LONDON. Spike may host N worknodes. 
 
   Worknode
   ---
+  Worknodes can be master or hot standby slaves, the only difference is who's 0MQ is used for decoupling work load.
   
-  each worknode is autonomous hot standby master. 
+  each worknode consists of :
+  
+  1. Job agent. An agent that keeps work list for location up to date, by pullig list DIFF from the HUB. Each node has full work list, so it can fail over instantly. Cost of loading large lists is mitigated by loading only diffs from hub
+    
+  2. 
+    
+  2.  
+  worknode is autonomous hot standby master. 
 
 
