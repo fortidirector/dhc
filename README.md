@@ -4,4 +4,31 @@ distributed health check 2.0+ superawesomenice
 Summary
 --
 
-Distributed Health Check 2.0+ superawesomenice
+Distributed Health Check 2.0+ superawesomenice (DHC further) is a cloud aware, horizontally scalable , redundant and highly available resource monitor. Anything that can be connected or discovered via standard networking protocol can also be monitored via DHC. 
+
+At the current release point DHC probes are limited to ....
+
+
+Architecture
+---
+
+DHC architecture is a spike-hub , 
+
+Hub
+---
+Hub is highly available cloud ready REST interface, built on a top of mongodb (or readis TBD) cluster.
+
+The key features to a hub are
+---
+
+1. Authenticate requestor 
+2. supply job lists / and DIFFs
+3. collect URI's performance data
+4. serve as service discovery
+5. serve as heart beat and performance monitors for spike members
+6. prepare data for dashboard
+
+there could be several geo aware hubs.
+
+
+job list and data IO facilities
