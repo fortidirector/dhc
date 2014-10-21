@@ -46,11 +46,9 @@ Spike is a remote data center location, i.e. LONDON. Spike may host N worknodes.
   
   each worknode consists of :
   
-  1. Job agent. An agent that keeps work list for location up to date, by pullig list DIFF from the HUB. Each node has full work list, so it can fail over instantly. Cost of loading large lists is mitigated by loading only diffs from hub
+  1. Job agent. 
+     - keeps work list for location up to date, by pullig list DIFF from the HUB. Each node has full work list, so it can fail over instantly. Cost of loading large lists is mitigated by loading only diffs from hub
     
-  2. 
+  2. Workqueue, job list is thereafter fed every minute
     
-  2.  
-  worknode is autonomous hot standby master. 
-
 
